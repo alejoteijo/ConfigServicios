@@ -1,6 +1,4 @@
 spring:
-    application:
-        name: servicio-vuelos
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://localhost:3306/agencia?serverTimezone=UTC
@@ -14,12 +12,8 @@ spring:
     mvc:
         pathmatch:
             matching-strategy: ant-path-matcher
-server:
-    port: 8090
 eureka:
     client:
         service-url:
             defaultZone: http://localhost:8761/eureka
         register-with-eureka: true
-    instance:
-        instance-id: servicio-vuelos-1
